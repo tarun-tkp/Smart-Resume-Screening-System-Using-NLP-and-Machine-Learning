@@ -11,3 +11,4 @@ Scikit-learn (TF-IDF & cosine similarity)
 pdfplumber / PyMuPDF (PDF text extraction)
 
 python-docx (DOCX text extraction)
+
