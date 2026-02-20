@@ -1,0 +1,152 @@
+╔════════════════════════════════════════════════════════════════╗
+║     AI-POWERED RESUME ANALYZER - STEP-BY-STEP INSTRUCTIONS    ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 PREREQUISITES
+================
+✓ Python 3.8 or higher installed
+✓ pip (Python package manager)
+✓ Internet connection (for first-time setup)
+
+🚀 SETUP STEPS (Windows)
+=========================
+
+Step 1: Open Command Prompt
+----------------------------
+- Press Win + R
+- Type: cmd
+- Press Enter
+
+Step 2: Navigate to Project Folder
+-----------------------------------
+cd path\to\resume-analyzer
+
+Step 3: Create Virtual Environment
+-----------------------------------
+python -m venv venv
+
+Step 4: Activate Virtual Environment
+-------------------------------------
+venv\Scripts\activate
+
+(You should see (venv) in your command prompt)
+
+Step 5: Install Dependencies
+-----------------------------
+pip install -r requirements.txt
+
+(This will take 2-3 minutes)
+
+Step 6: Run the Application
+----------------------------
+streamlit run app.py
+
+Step 7: Open in Browser
+------------------------
+- App will auto-open at: http://localhost:8501
+- If not, manually open the URL in your browser
+
+✅ SUCCESS! The app is now running!
+
+═══════════════════════════════════════════════════════════════
+
+🎯 HOW TO USE THE APP
+======================
+
+1. UPLOAD RESUME
+   - Click "Browse files"
+   - Select your resume (PDF or DOCX)
+   - Wait for "Resume uploaded" message
+
+2. ADD JOB DESCRIPTION
+   - Option A: Check "Use sample job description"
+   - Option B: Paste your own JD in the text box
+
+3. ANALYZE
+   - Click "🔍 Analyze Match" button
+   - Wait 2-3 seconds for processing
+
+4. VIEW RESULTS
+   - Match percentage score
+   - Matched skills (green checkmarks)
+   - Missing skills (red X marks)
+   - Improvement suggestions
+
+═══════════════════════════════════════════════════════════════
+
+🧪 QUICK TEST
+==============
+
+To verify everything works:
+
+1. Run the app (streamlit run app.py)
+2. Check "Use sample job description"
+3. Create a test file named "test_resume.txt" with:
+
+   John Doe
+   Python Developer
+   Skills: Python, Django, SQL, Git, Docker
+
+4. Upload this file
+5. Click "Analyze Match"
+6. You should see ~40-50% match with results
+
+═══════════════════════════════════════════════════════════════
+
+⚠️ TROUBLESHOOTING
+===================
+
+Problem: "python is not recognized"
+Solution: Install Python from python.org
+
+Problem: "streamlit is not recognized"
+Solution: Make sure venv is activated and run:
+         pip install streamlit
+
+Problem: "NLTK data not found"
+Solution: Run this in Python:
+         python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+
+Problem: "Port already in use"
+Solution: Run with different port:
+         streamlit run app.py --server.port 8502
+
+Problem: PDF extraction fails
+Solution: Try DOCX format or ensure PDF has text (not scanned image)
+
+═══════════════════════════════════════════════════════════════
+
+🛑 TO STOP THE APP
+===================
+
+Press: Ctrl + C in the command prompt
+
+═══════════════════════════════════════════════════════════════
+
+📚 ADDITIONAL RESOURCES
+========================
+
+- Full Documentation: README.md
+- Quick Start Guide: QUICKSTART.md
+- Testing Guide: data/TESTING_GUIDE.md
+- Project Overview: PROJECT_OVERVIEW.md
+- Sample JDs: data/sample_jds.txt
+
+═══════════════════════════════════════════════════════════════
+
+💡 TIPS FOR BEST RESULTS
+=========================
+
+1. Use clear, well-formatted resumes
+2. Include complete job descriptions
+3. Ensure technical skills are clearly listed
+4. Use standard skill names (Python, not "Py")
+5. Test with sample JD first
+
+═══════════════════════════════════════════════════════════════
+
+🎉 ENJOY YOUR RESUME ANALYZER!
+
+For questions or issues, check README.md or TESTING_GUIDE.md
+
+═══════════════════════════════════════════════════════════════

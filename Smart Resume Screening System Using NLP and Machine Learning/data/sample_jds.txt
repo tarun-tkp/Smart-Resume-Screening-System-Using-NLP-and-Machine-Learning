@@ -1,0 +1,83 @@
+SAMPLE JOB DESCRIPTION 1: Senior Python Developer
+=================================================
+
+Senior Python Developer
+
+Requirements:
+- 5+ years of experience in Python development
+- Strong knowledge of Django and Flask frameworks
+- Experience with REST API development
+- Proficiency in SQL and NoSQL databases (PostgreSQL, MongoDB)
+- Familiarity with cloud platforms (AWS, Azure)
+- Experience with Docker and Kubernetes
+- Knowledge of CI/CD pipelines
+- Strong understanding of machine learning concepts
+- Experience with Git version control
+- Excellent problem-solving skills
+- Bachelor's degree in Computer Science or related field
+
+Nice to have:
+- Experience with React or Angular
+- Knowledge of microservices architecture
+- Familiarity with Agile/Scrum methodologies
+
+
+SAMPLE JOB DESCRIPTION 2: Full Stack Developer
+=================================================
+
+Full Stack Developer
+
+We are looking for a talented Full Stack Developer to join our team.
+
+Required Skills:
+- 3+ years of professional development experience
+- Frontend: React, JavaScript, TypeScript, HTML, CSS
+- Backend: Node.js, Express.js
+- Database: MySQL, MongoDB
+- RESTful API design and development
+- Git version control
+- Responsive web design
+- Testing frameworks (Jest, Mocha)
+
+Preferred Skills:
+- Experience with AWS or Azure
+- Docker containerization
+- CI/CD pipelines
+- Agile development methodology
+- GraphQL
+- Redux or similar state management
+
+Responsibilities:
+- Develop and maintain web applications
+- Write clean, maintainable code
+- Collaborate with cross-functional teams
+- Participate in code reviews
+- Troubleshoot and debug applications
+
+
+SAMPLE JOB DESCRIPTION 3: Data Scientist
+=================================================
+
+Data Scientist
+
+Join our data science team to build cutting-edge ML solutions.
+
+Requirements:
+- Master's degree in Computer Science, Statistics, or related field
+- 4+ years of experience in data science
+- Strong Python programming skills
+- Experience with machine learning frameworks (TensorFlow, PyTorch, scikit-learn)
+- Proficiency in data analysis libraries (Pandas, NumPy)
+- SQL and database management
+- Statistical analysis and modeling
+- Data visualization (Matplotlib, Seaborn, Tableau)
+- Experience with big data technologies (Spark, Hadoop)
+- Deep learning and neural networks
+- NLP or computer vision experience
+
+Nice to have:
+- Cloud platforms (AWS, GCP, Azure)
+- MLOps and model deployment
+- Docker and Kubernetes
+- R programming language
+- Research publications

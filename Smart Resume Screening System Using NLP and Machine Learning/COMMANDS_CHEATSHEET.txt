@@ -1,0 +1,340 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║              RESUME ANALYZER - COMMANDS CHEAT SHEET                       ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          INITIAL SETUP COMMANDS                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Windows:
+--------
+# Navigate to project
+cd path\to\resume-analyzer
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+
+
+Mac/Linux:
+----------
+# Navigate to project
+cd path/to/resume-analyzer
+
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          DAILY USE COMMANDS                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Windows:
+--------
+# Activate environment
+venv\Scripts\activate
+
+# Run app
+streamlit run app.py
+
+# Stop app
+Ctrl + C
+
+
+Mac/Linux:
+----------
+# Activate environment
+source venv/bin/activate
+
+# Run app
+streamlit run app.py
+
+# Stop app
+Ctrl + C
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                        TROUBLESHOOTING COMMANDS                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# Check Python version
+python --version
+# Should be 3.8 or higher
+
+# Check pip version
+pip --version
+
+# List installed packages
+pip list
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Reinstall dependencies
+pip install -r requirements.txt --upgrade
+
+# Install specific package
+pip install streamlit
+pip install pdfplumber
+pip install python-docx
+pip install nltk
+pip install scikit-learn
+
+# Download NLTK data manually
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+
+# Check if Streamlit is installed
+streamlit --version
+
+# Run on different port
+streamlit run app.py --server.port 8502
+
+# Run with specific browser
+streamlit run app.py --server.headless false
+
+# Clear Streamlit cache
+streamlit cache clear
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          TESTING COMMANDS                                 │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# Test Python installation
+python --version
+
+# Test imports
+python -c "import streamlit; print('Streamlit OK')"
+python -c "import pdfplumber; print('pdfplumber OK')"
+python -c "import docx; print('python-docx OK')"
+python -c "import nltk; print('NLTK OK')"
+python -c "import sklearn; print('scikit-learn OK')"
+
+# Test NLTK data
+python -c "import nltk; nltk.data.find('tokenizers/punkt')"
+
+# Run app in debug mode
+streamlit run app.py --logger.level=debug
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                        VIRTUAL ENVIRONMENT COMMANDS                       │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Windows:
+--------
+# Create venv
+python -m venv venv
+
+# Activate
+venv\Scripts\activate
+
+# Deactivate
+deactivate
+
+# Delete venv
+rmdir /s venv
+
+
+Mac/Linux:
+----------
+# Create venv
+python3 -m venv venv
+
+# Activate
+source venv/bin/activate
+
+# Deactivate
+deactivate
+
+# Delete venv
+rm -rf venv
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          PROJECT MANAGEMENT                               │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# View project structure
+tree /F /A                    # Windows
+tree -L 2                     # Mac/Linux
+
+# Count lines of code
+find . -name "*.py" -exec wc -l {} +    # Mac/Linux
+
+# Check file sizes
+dir                           # Windows
+ls -lh                        # Mac/Linux
+
+# Search for text in files
+findstr /s "search_term" *.py           # Windows
+grep -r "search_term" *.py              # Mac/Linux
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          GIT COMMANDS (Optional)                          │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# Initialize git
+git init
+
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit: Resume Analyzer"
+
+# Create .gitignore (already provided)
+# Just commit it
+
+# Push to GitHub
+git remote add origin <your-repo-url>
+git branch -M main
+git push -u origin main
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          DEPLOYMENT COMMANDS                              │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Streamlit Cloud:
+----------------
+# No commands needed - just connect GitHub repo to Streamlit Cloud
+
+Docker:
+-------
+# Build image
+docker build -t resume-analyzer .
+
+# Run container
+docker run -p 8501:8501 resume-analyzer
+
+Heroku:
+-------
+# Login
+heroku login
+
+# Create app
+heroku create resume-analyzer-app
+
+# Deploy
+git push heroku main
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          PYTHON PACKAGE COMMANDS                          │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# Create requirements.txt from current environment
+pip freeze > requirements.txt
+
+# Install from requirements.txt
+pip install -r requirements.txt
+
+# Install specific version
+pip install streamlit==1.32.0
+
+# Uninstall package
+pip uninstall streamlit
+
+# Show package info
+pip show streamlit
+
+# Search for package
+pip search resume
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          STREAMLIT SPECIFIC COMMANDS                      │
+└───────────────────────────────────────────────────────────────────────────┘
+
+# Run app
+streamlit run app.py
+
+# Run on specific port
+streamlit run app.py --server.port 8502
+
+# Run without opening browser
+streamlit run app.py --server.headless true
+
+# Run with custom config
+streamlit run app.py --server.maxUploadSize 200
+
+# Clear cache
+streamlit cache clear
+
+# Show config
+streamlit config show
+
+# Check version
+streamlit --version
+
+# Get help
+streamlit --help
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          QUICK REFERENCE                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Most Common Commands:
+---------------------
+1. venv\Scripts\activate              # Activate environment (Windows)
+2. source venv/bin/activate           # Activate environment (Mac/Linux)
+3. streamlit run app.py               # Run the app
+4. Ctrl + C                           # Stop the app
+5. pip install -r requirements.txt    # Install dependencies
+
+URLs:
+-----
+Local App:        http://localhost:8501
+Alternative Port: http://localhost:8502
+
+Keyboard Shortcuts in App:
+---------------------------
+Ctrl + C          # Stop server
+Ctrl + R          # Refresh browser
+F5                # Reload page
+F12               # Open developer tools
+
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                          ONE-LINE SETUP                                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+Windows:
+--------
+python -m venv venv & venv\Scripts\activate & pip install -r requirements.txt & streamlit run app.py
+
+Mac/Linux:
+----------
+python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && streamlit run app.py
+
+
+═══════════════════════════════════════════════════════════════════════════
+                          END OF CHEAT SHEET
+═══════════════════════════════════════════════════════════════════════════
+
+💡 TIP: Bookmark this file for quick reference!
+
+📚 For detailed explanations, see:
+   - RUN_INSTRUCTIONS.txt
+   - QUICKSTART.md
+   - README.md
